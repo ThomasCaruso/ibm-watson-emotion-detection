@@ -1,0 +1,2 @@
+$ python tools/validate_output_format.py
+{'anger': 0.04, 'disgust': 0.01, 'fear': 0.03, 'joy': 0.89, 'sadness': 0.03, 'dominant_emotion': 'joy'}
