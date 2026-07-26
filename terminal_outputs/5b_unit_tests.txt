@@ -1,0 +1,12 @@
+$ python -m unittest test_emotion_detection.py -v
+test_anger (test_emotion_detection.TestEmotionDetector.test_anger) ... ok
+test_disgust (test_emotion_detection.TestEmotionDetector.test_disgust) ... ok
+test_fear (test_emotion_detection.TestEmotionDetector.test_fear) ... ok
+test_joy (test_emotion_detection.TestEmotionDetector.test_joy) ... ok
+test_sadness (test_emotion_detection.TestEmotionDetector.test_sadness) ... ok
+test_status_code_400 (test_emotion_detection.TestEmotionDetector.test_status_code_400) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+OK
