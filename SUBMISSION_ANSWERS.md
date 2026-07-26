@@ -1,42 +1,105 @@
-# IBM Final Project Submission Answers
+# Final Project Submission Answers
+
+Required repository name: `oaqjp-final-project-emb-ai`
 
 ## Task 1 — GitHub README URL
 
-https://github.com/ThomasCaruso/ibm-watson-emotion-detection/blob/main/README.md
+https://github.com/ThomasCaruso/oaqjp-final-project-emb-ai/blob/main/README.md
 
 ## Task 2 — Emotion detection application
 
-- Code: `EmotionDetection/emotion_detection.py`
-- Import evidence: `terminal_outputs/2b_import_test.txt`
+### Activity 1
+Use the code from:
+
+`emotion_detection.py`
+
+### Activity 2
+Use the terminal output from:
+
+`terminal_outputs/2b_application_creation.txt`
+
+The evidence includes the required project path `/home/project/final_project`, the exact import `from emotion_detection import emotion_detector`, and a dictionary-formatted emotion result.
 
 ## Task 3 — Formatted output
 
-- Function: `EmotionDetection/emotion_detection.py`
-- Output evidence: `terminal_outputs/3b_output_format.txt`
+### Activity 1
+Use the code from:
+
+`EmotionDetection/emotion_detection.py`
+
+### Activity 2
+Use the terminal output from:
+
+`terminal_outputs/3b_output_format.txt`
 
 ## Task 4 — Validate the package
 
-- Package initializer: https://github.com/ThomasCaruso/ibm-watson-emotion-detection/blob/main/EmotionDetection/__init__.py
-- Validation evidence: `terminal_outputs/4b_package_validation.txt`
+### Activity 1
+
+https://github.com/ThomasCaruso/oaqjp-final-project-emb-ai/blob/main/EmotionDetection/__init__.py
+
+### Activity 2
+Use the terminal output from:
+
+`terminal_outputs/4b_packaging_test.txt`
+
+The evidence includes the exact import `from EmotionDetection.emotion_detection import emotion_detector` and a dictionary result whose dominant emotion is `anger`.
 
 ## Task 5 — Unit testing
 
-- Tests: `test_emotion_detection.py`
-- Results: `terminal_outputs/5b_unit_tests.txt`
+### Activity 1
+Use the code from:
+
+`test_emotion_detection.py`
+
+### Activity 2
+Use the terminal output from:
+
+`terminal_outputs/5b_unit_tests.txt`
 
 ## Task 6 — Flask deployment
 
-- Server: `server.py`
-- Screenshot: `screenshots/6b_deployment_test.png`
+### Activity 1
+Use the code from:
+
+`server.py`
+
+The server uses the explicit import:
+
+```python
+from EmotionDetection.emotion_detection import emotion_detector
+```
+
+### Activity 2
+Upload:
+
+`screenshots/6b_deployment_test.png`
 
 ## Task 7 — Error handling
 
-- Watson status-code handling: `EmotionDetection/emotion_detection.py`
-- Blank-input handling: `server.py`
-- Screenshot: `screenshots/7c_error_handling_interface.png`
+### Activity 1
+Use the code from:
+
+`EmotionDetection/emotion_detection.py`
+
+### Activity 2
+Use the code from:
+
+`server.py`
+
+### Activity 3
+Upload:
+
+`screenshots/7c_error_handling_interface.png`
 
 ## Task 8 — Static analysis
 
-- Server code: `server.py`
-- Pylint configuration: `.pylintrc`
-- Evidence: `terminal_outputs/8b_static_analysis.txt`
+### Activity 1
+Use the code from:
+
+`server.py`
+
+### Activity 2
+Use the terminal output from:
+
+`terminal_outputs/8b_static_analysis.txt`
