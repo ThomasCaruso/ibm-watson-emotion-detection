@@ -3,7 +3,7 @@
 import unittest
 from unittest.mock import Mock, patch
 
-from EmotionDetection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 
 class TestEmotionDetector(unittest.TestCase):
