@@ -1,5 +1,7 @@
-# Watson NLP Emotion Detection Web Application
+# Final Project
 
+**Project name:** Final Project  
+**Required repository name:** `oaqjp-final-project-emb-ai`  
 **Developer:** Thomas Caruso
 
 This repository contains the final project for IBM's **Developing AI Applications with Python and Flask** course. The application sends text to the Watson NLP EmotionPredict endpoint, formats five emotion scores, identifies the dominant emotion, handles invalid input, and exposes the result through a Flask web interface.
@@ -8,6 +10,7 @@ This repository contains the final project for IBM's **Developing AI Application
 
 ```text
 .
+├── emotion_detection.py
 ├── EmotionDetection
 │   ├── __init__.py
 │   └── emotion_detection.py
