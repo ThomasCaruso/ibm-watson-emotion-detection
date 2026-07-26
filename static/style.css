@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --ink: #161616;
+    --muted: #525252;
+    --blue: #0f62fe;
+    --blue-dark: #0043ce;
+    --surface: #ffffff;
+    --soft: #f4f4f4;
+    --line: #d6d6d6;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    background:
+        linear-gradient(135deg, rgba(15, 98, 254, 0.10), transparent 45%),
+        #f8f9fb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-shell {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 44px 24px;
+}
+
+.app-card {
+    width: min(780px, 100%);
+    padding: 46px;
+    border-top: 8px solid var(--blue);
+    background: var(--surface);
+    box-shadow: 0 22px 60px rgba(22, 22, 22, 0.14);
+}
+
+.app-badge {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 7px 11px;
+    color: var(--blue-dark);
+    background: #edf5ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: clamp(34px, 6vw, 54px);
+    line-height: 1.05;
+}
+
+.intro {
+    max-width: 650px;
+    margin: 0 0 30px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 700;
+}
+
+textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #8d8d8d;
+    border-bottom: 3px solid #8d8d8d;
+    background: var(--soft);
+    color: var(--ink);
+    font: inherit;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: var(--blue);
+    outline: 2px solid var(--blue);
+    outline-offset: -2px;
+}
+
+button {
+    margin-top: 18px;
+    padding: 15px 24px;
+    border: 0;
+    color: white;
+    background: var(--blue);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--blue-dark);
+}
+
+.result-panel {
+    margin-top: 30px;
+    border: 1px solid var(--line);
+    background: #fafafa;
+}
+
+.result-label {
+    padding: 11px 15px;
+    color: white;
+    background: #393939;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+#system_response {
+    min-height: 92px;
+    padding: 18px;
+    color: #262626;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+#system_response.error {
+    color: #a2191f;
+    background: #fff1f1;
+    font-weight: 700;
+}
+
+#system_response.success {
+    border-left: 5px solid #24a148;
+    background: #defbe6;
+}
+
+@media (max-width: 620px) {
+    .app-card {
+        padding: 30px 22px;
+    }
+}
