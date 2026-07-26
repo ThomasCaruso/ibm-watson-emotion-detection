@@ -1,0 +1,3 @@
+$ python -c "from EmotionDetection import emotion_detector; print('EmotionDetection imported successfully'); print('emotion_detector is callable:', callable(emotion_detector))"
+EmotionDetection imported successfully
+emotion_detector is callable: True
